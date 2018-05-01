@@ -1,0 +1,883 @@
+
+Table CUSTOMER created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Table BOOKS altered.
+
+
+Table SALES_DETAIL created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 39 in command -
+ALTER TABLE BOOKS
+  ADD PRIMARY KEY(B_CODE)
+Error report -
+ORA-02260: table can have only one primary key
+02260. 00000 -  "table can have only one primary key"
+*Cause:    Self-evident.
+*Action:   Remove the extra primary key.
+
+Table AUTHORS altered.
+
+
+Table BOOKS_AUTHORS altered.
+
+
+Table BOOKS_AUTHORS altered.
+
+
+Table BRANCHES altered.
+
+
+Table BOOKS_BRANCHES altered.
+
+
+Table BOOKS_BRANCHES altered.
+
+
+12 rows updated.
+
+
+26 rows updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+Last Name  First Nam Title                         Cat      Price Paper Name                    City        St
+---------- --------- ----------------------------- --- ---------- ----- ----------------------- ----------- --
+Adamski    Joseph    Database Systems              CS       54.95 false boyd and fraser         Boston      MA
+Archer     Jeffrey   First Among Equals            FIC       3.95 true  Pocket Books            New York    NY
+Archer     Jeffrey   Kane and Abel                 FIC       5.55 true  Pocket Books            New York    NY
+Archer     Jeffrey   The Prodigal Daughter         FIC       5.45 true  Pocket Books            New York    NY
+Camus      Albert    The Stranger                  FIC       9.63 true  Bantam Books            New York    NY
+Castleman  Riva      Prints of the 20th Century    ART      13.25 true  Pocket Books            New York    NY
+Christie   Agatha    Death on the Nile             MYS       4.35 true  Bantam Books            New York    NY
+Christie   Agatha    Evil Under the Sun            MYS       4.45 true  Pocket Books            New York    NY
+Clarke     Arthur C. Ghost from the Grand Banks    SFI      21.95 false Bantam Books            New York    NY
+Cussler    Clive     Night Probe                   SUS      43.89 true  Bantam Books            New York    NY
+Cussler    Clive     Vibrancy                      MYS          6 true  Bantam Books            New York    NY
+
+Last Name  First Nam Title                         Cat      Price Paper Name                    City        St
+---------- --------- ----------------------------- --- ---------- ----- ----------------------- ----------- --
+Cussler    Clive     Vixen 07                      SUS       6.11 true  Bantam Books            New York    NY
+Francis    Dick      Knockdown                     MYS       4.75 true  Pocket Books            New York    NY
+Francis    Dick      Risk                          MYS       3.95 true  Pocket Books            New York    NY
+Francis    Dick      Smokescreen                   MYS       4.55 true  Pocket Books            New York    NY
+Ginferrer  Pere      Magritte                      ART      21.95 false Signet                  New York    NY
+Harmon     Willis    Higher Creativity             PSY       9.75 true  Pocket Books            New York    NY
+Kafka      Franz     Amerika                       FIC      12.05 true  Bantam Books            New York    NY
+Kafka      Franz     The Castle                    FIC      13.37 true  Bantam Books            New York    NY
+King       Stephen   Carrie                        HOR       6.75 true  Signet                  New York    NY
+King       Stephen   Kujo                          HOR       6.65 true  Signet                  New York    NY
+Lovecraft  H.P.      The Dunwich Horror and Others HOR      19.75 false Pocket Books            New York    NY
+
+Last Name  First Nam Title                         Cat      Price Paper Name                    City        St
+---------- --------- ----------------------------- --- ---------- ----- ----------------------- ----------- --
+Novalis              Hymns to the Night            POE       7.43 true  Bantam Books            New York    NY
+Owen       Barbara   Dragons at the Door           MYS       8.75 true  Bantam Books            New York    NY
+Owen       Barbara   The Organist                  MYS      16.95 true  Signet                  New York    NY
+Paz        Octavio   Marcel Duchamp                ART      11.25 true  Pocket Books            New York    NY
+Pratt      Philip    A Guide to SQL                CS       23.95 true  boyd and fraser         Boston      MA
+Pratt      Philip    Database Systems              CS       54.95 false boyd and fraser         Boston      MA
+Pratt      Philip    dBASE Programming             CS        39.9 true  boyd and fraser         Boston      MA
+Reingold   Howard    Higher Creativity             PSY       9.75 true  Pocket Books            New York    NY
+Southworth Rod       DOS Essentials                CS        20.5 true  boyd and fraser         Boston      MA
+Southworth Rod       Everywhere I Go               MYS      23.95 true  Signet                  New York    NY
+Williams   Peter     Dragons at the Door           MYS       8.75 true  Bantam Books            New York    NY
+
+Last Name  First Nam Title                         Cat      Price Paper Name                    City        St
+---------- --------- ----------------------------- --- ---------- ----- ----------------------- ----------- --
+Williams   Peter     The Organist                  MYS      16.95 true  Signet                  New York    NY
+Wray       Robert    dBASE Programming             CS        39.9 true  boyd and fraser         Boston      MA
+Zinbardo   Philip    Shyness                       PSY       8.42 true  Bantam Books            New York    NY
+
+36 rows selected. 
+
+
+Name      Location       Cat Title                            On Hand Reorder Level
+--------- -------------- --- ----------------------------- ---------- -------------
+Brentwood Brentwood Mall HOR Kujo                                   2             5
+Brentwood Brentwood Mall SFI Ghost from the Grand Banks             2             4
+Brentwood Brentwood Mall FIC The Prodigal Daughter                  2             5
+Brentwood Brentwood Mall ART Magritte                               1             5
+Brentwood Brentwood Mall MYS Smokescreen                            2             5
+Brentwood Brentwood Mall MYS Evil Under the Sun                     3             4
+Brentwood Brentwood Mall MYS Vibrancy                               2             3
+Brentwood Brentwood Mall SUS Night Probe                            2             5
+Brentwood Brentwood Mall HOR The Dunwich Horror and Others          2             4
+Downtown  16 Riverview   MYS Smokescreen                            1             5
+Downtown  16 Riverview   FIC The Stranger                           1             5
+
+Name      Location       Cat Title                            On Hand Reorder Level
+--------- -------------- --- ----------------------------- ---------- -------------
+Downtown  16 Riverview   PSY Shyness                                2             5
+Downtown  16 Riverview   FIC The Castle                             3             4
+Downtown  16 Riverview   FIC Amerika                                2             4
+Downtown  16 Riverview   CS  A Guide to SQL                         1             5
+Downtown  16 Riverview   MYS The Organist                           1             4
+Downtown  16 Riverview   PSY Higher Creativity                      2             3
+Downtown  16 Riverview   POE Hymns to the Night                     3             4
+Downtown  16 Riverview   SFI Ghost from the Grand Banks             3             4
+Eastshore Eastshore Mall POE Hymns to the Night                     1             4
+Eastshore Eastshore Mall SFI Ghost from the Grand Banks             1             4
+Eastshore Eastshore Mall ART Prints of the 20th Century             3             4
+
+Name      Location       Cat Title                            On Hand Reorder Level
+--------- -------------- --- ----------------------------- ---------- -------------
+Eastshore Eastshore Mall MYS Smokescreen                            3             5
+Eastshore Eastshore Mall CS  Database Systems                       2             5
+Eastshore Eastshore Mall HOR Carrie                                 1             4
+Hilldale  1289 Bedford   MYS Smokescreen                            1             5
+Hilldale  1289 Bedford   MYS Knockdown                              1             4
+Hilldale  1289 Bedford   FIC The Stranger                           3             5
+Hilldale  1289 Bedford   MYS Evil Under the Sun                     4             5
+Hilldale  1289 Bedford   SFI Ghost from the Grand Banks             3             4
+Hilldale  1289 Bedford   SUS Vixen 07                               2             5
+Hilldale  1289 Bedford   FIC Kane and Abel                          2             7
+Hilldale  1289 Bedford   CS  DOS Essentials                         2             6
+
+Name      Location       Cat Title                            On Hand Reorder Level
+--------- -------------- --- ----------------------------- ---------- -------------
+Hilldale  1289 Bedford   MYS Death on the Nile                      3             5
+Hilldale  1289 Bedford   MYS Vibrancy                               1             3
+Hilldale  1289 Bedford   FIC First Among Equals                     1             4
+Hilldale  1289 Bedford   MYS Risk                                   2             5
+Hilldale  1289 Bedford   HOR Kujo                                   4             5
+Hilldale  1289 Bedford   ART Marcel Duchamp                         1             5
+Hilldale  1289 Bedford   CS  dBASE Programming                      2             4
+
+40 rows selected. 
+
+
+Cat Title                              Price LAST_NAME 
+--- ----------------------------- ---------- ----------
+ART Marcel Duchamp                     11.25 Paz       
+ART Magritte                           21.95 Ginferrer 
+ART Prints of the 20th Century         13.25 Castleman 
+CS  DOS Essentials                      20.5 Southworth
+CS  A Guide to SQL                     23.95 Pratt     
+CS  Database Systems                   54.95 Pratt     
+CS  dBASE Programming                   39.9 Pratt     
+CS  Database Systems                   54.95 Adamski   
+CS  dBASE Programming                   39.9 Wray      
+FIC The Prodigal Daughter               5.45 Archer    
+FIC The Stranger                        9.63 Camus     
+
+Cat Title                              Price LAST_NAME 
+--- ----------------------------- ---------- ----------
+FIC Amerika                            12.05 Kafka     
+FIC Kane and Abel                       5.55 Archer    
+FIC The Castle                         13.37 Kafka     
+FIC First Among Equals                  3.95 Archer    
+HOR The Dunwich Horror and Others      19.75 Lovecraft 
+HOR Kujo                                6.65 King      
+HOR Carrie                              6.75 King      
+MYS The Organist                       16.95 Owen      
+MYS Death on the Nile                   4.35 Christie  
+MYS Dragons at the Door                 8.75 Williams  
+MYS Dragons at the Door                 8.75 Owen      
+
+Cat Title                              Price LAST_NAME 
+--- ----------------------------- ---------- ----------
+MYS Evil Under the Sun                  4.45 Christie  
+MYS The Organist                       16.95 Williams  
+MYS Vibrancy                               6 Cussler   
+MYS Risk                                3.95 Francis   
+MYS Everywhere I Go                    23.95 Southworth
+MYS Knockdown                           4.75 Francis   
+MYS Smokescreen                         4.55 Francis   
+POE Hymns to the Night                  7.43 Novalis   
+PSY Higher Creativity                   9.75 Harmon    
+PSY Shyness                             8.42 Zinbardo  
+PSY Higher Creativity                   9.75 Reingold  
+
+Cat Title                              Price LAST_NAME 
+--- ----------------------------- ---------- ----------
+SFI Ghost from the Grand Banks         21.95 Clarke    
+SUS Vixen 07                            6.11 Cussler   
+SUS Night Probe                        43.89 Cussler   
+
+36 rows selected. 
+
+
+Name                    City        St Title                         Paper
+----------------------- ----------- -- ----------------------------- -----
+Bantam Books            New York    NY Amerika                       true 
+Bantam Books            New York    NY Death on the Nile             true 
+Bantam Books            New York    NY Dragons at the Door           true 
+Bantam Books            New York    NY Ghost from the Grand Banks    false
+Bantam Books            New York    NY Hymns to the Night            true 
+Bantam Books            New York    NY Night Probe                   true 
+Bantam Books            New York    NY Shyness                       true 
+Bantam Books            New York    NY The Castle                    true 
+Bantam Books            New York    NY The Next Star Trek            false
+Bantam Books            New York    NY The Stranger                  true 
+Bantam Books            New York    NY Vibrancy                      true 
+
+Name                    City        St Title                         Paper
+----------------------- ----------- -- ----------------------------- -----
+Bantam Books            New York    NY Vixen 07                      true 
+Pocket Books            New York    NY Evil Under the Sun            true 
+Pocket Books            New York    NY First Among Equals            true 
+Pocket Books            New York    NY Higher Creativity             true 
+Pocket Books            New York    NY Kane and Abel                 true 
+Pocket Books            New York    NY Knockdown                     true 
+Pocket Books            New York    NY Marcel Duchamp                true 
+Pocket Books            New York    NY Prints of the 20th Century    true 
+Pocket Books            New York    NY Risk                          true 
+Pocket Books            New York    NY Smokescreen                   true 
+Pocket Books            New York    NY The Dunwich Horror and Others false
+
+Name                    City        St Title                         Paper
+----------------------- ----------- -- ----------------------------- -----
+Pocket Books            New York    NY The Prodigal Daughter         true 
+Random House            New York    NY The DaVinci Code              false
+Signet                  New York    NY Carrie                        true 
+Signet                  New York    NY Everywhere I Go               true 
+Signet                  New York    NY Kujo                          true 
+Signet                  New York    NY Magritte                      false
+Signet                  New York    NY The Organist                  true 
+boyd and fraser         Boston      MA A Guide to SQL                true 
+boyd and fraser         Boston      MA DOS Essentials                true 
+boyd and fraser         Boston      MA Database Systems              false
+boyd and fraser         Boston      MA dBASE Programming             true 
+
+33 rows selected. 
+
+
+Last Name  First Nam Title                              Price Sale Date  Number Sold
+---------- --------- ----------------------------- ---------- ---------- -----------
+Camus      Albert    The Stranger                        9.63 12/01/2017           2
+Novalis              Hymns to the Night                  7.43 12/01/2017           3
+Zinbardo   Philip    Shyness                             8.42 12/01/2017           1
+
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.75 Knockdown                     Adamski    Joseph   
+MYS      23.57 The DaVinci Code              Adamski    Joseph   
+MYS          6 Vibrancy                      Adamski    Joseph   
+MYS       4.45 Evil Under the Sun            Adamski    Joseph   
+MYS      23.95 Everywhere I Go               Adamski    Joseph   
+MYS       4.55 Smokescreen                   Adamski    Joseph   
+MYS      16.95 The Organist                  Adamski    Joseph   
+MYS       8.75 Dragons at the Door           Adamski    Joseph   
+MYS       4.35 Death on the Nile             Adamski    Joseph   
+MYS       3.95 Risk                          Adamski    Joseph   
+MYS      23.95 Everywhere I Go               Archer     Jeffrey  
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS          6 Vibrancy                      Archer     Jeffrey  
+MYS          6 Vibrancy                      Archer     Jeffrey  
+MYS          6 Vibrancy                      Archer     Jeffrey  
+MYS      16.95 The Organist                  Archer     Jeffrey  
+MYS      16.95 The Organist                  Archer     Jeffrey  
+MYS      16.95 The Organist                  Archer     Jeffrey  
+MYS      23.57 The DaVinci Code              Archer     Jeffrey  
+MYS      23.57 The DaVinci Code              Archer     Jeffrey  
+MYS      23.57 The DaVinci Code              Archer     Jeffrey  
+MYS       8.75 Dragons at the Door           Archer     Jeffrey  
+MYS       8.75 Dragons at the Door           Archer     Jeffrey  
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       8.75 Dragons at the Door           Archer     Jeffrey  
+MYS       4.45 Evil Under the Sun            Archer     Jeffrey  
+MYS       4.45 Evil Under the Sun            Archer     Jeffrey  
+MYS       4.45 Evil Under the Sun            Archer     Jeffrey  
+MYS       3.95 Risk                          Archer     Jeffrey  
+MYS       3.95 Risk                          Archer     Jeffrey  
+MYS       3.95 Risk                          Archer     Jeffrey  
+MYS      23.95 Everywhere I Go               Archer     Jeffrey  
+MYS      23.95 Everywhere I Go               Archer     Jeffrey  
+MYS       4.35 Death on the Nile             Archer     Jeffrey  
+MYS       4.35 Death on the Nile             Archer     Jeffrey  
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.35 Death on the Nile             Archer     Jeffrey  
+MYS       4.75 Knockdown                     Archer     Jeffrey  
+MYS       4.75 Knockdown                     Archer     Jeffrey  
+MYS       4.75 Knockdown                     Archer     Jeffrey  
+MYS       4.55 Smokescreen                   Archer     Jeffrey  
+MYS       4.55 Smokescreen                   Archer     Jeffrey  
+MYS       4.55 Smokescreen                   Archer     Jeffrey  
+MYS       8.75 Dragons at the Door           Camus      Albert   
+MYS       4.35 Death on the Nile             Camus      Albert   
+MYS      23.57 The DaVinci Code              Camus      Albert   
+MYS       4.45 Evil Under the Sun            Camus      Albert   
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.55 Smokescreen                   Camus      Albert   
+MYS       4.75 Knockdown                     Camus      Albert   
+MYS          6 Vibrancy                      Camus      Albert   
+MYS       3.95 Risk                          Camus      Albert   
+MYS      23.95 Everywhere I Go               Camus      Albert   
+MYS      16.95 The Organist                  Camus      Albert   
+MYS      23.57 The DaVinci Code              Castleman  Riva     
+MYS      16.95 The Organist                  Castleman  Riva     
+MYS          6 Vibrancy                      Castleman  Riva     
+MYS      23.95 Everywhere I Go               Castleman  Riva     
+MYS       4.35 Death on the Nile             Castleman  Riva     
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.75 Knockdown                     Castleman  Riva     
+MYS       4.55 Smokescreen                   Castleman  Riva     
+MYS       3.95 Risk                          Castleman  Riva     
+MYS       8.75 Dragons at the Door           Castleman  Riva     
+MYS       4.45 Evil Under the Sun            Castleman  Riva     
+MYS       4.45 Evil Under the Sun            Christie   Agatha   
+MYS       4.45 Evil Under the Sun            Christie   Agatha   
+MYS       3.95 Risk                          Christie   Agatha   
+MYS       3.95 Risk                          Christie   Agatha   
+MYS       4.55 Smokescreen                   Christie   Agatha   
+MYS       4.55 Smokescreen                   Christie   Agatha   
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.75 Knockdown                     Christie   Agatha   
+MYS       4.75 Knockdown                     Christie   Agatha   
+MYS       4.35 Death on the Nile             Christie   Agatha   
+MYS       4.35 Death on the Nile             Christie   Agatha   
+MYS      23.95 Everywhere I Go               Christie   Agatha   
+MYS      23.95 Everywhere I Go               Christie   Agatha   
+MYS          6 Vibrancy                      Christie   Agatha   
+MYS          6 Vibrancy                      Christie   Agatha   
+MYS      16.95 The Organist                  Christie   Agatha   
+MYS      16.95 The Organist                  Christie   Agatha   
+MYS      23.57 The DaVinci Code              Christie   Agatha   
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS      23.57 The DaVinci Code              Christie   Agatha   
+MYS       8.75 Dragons at the Door           Christie   Agatha   
+MYS       8.75 Dragons at the Door           Christie   Agatha   
+MYS      16.95 The Organist                  Clarke     Arthur C.
+MYS      23.95 Everywhere I Go               Clarke     Arthur C.
+MYS       8.75 Dragons at the Door           Clarke     Arthur C.
+MYS       4.45 Evil Under the Sun            Clarke     Arthur C.
+MYS       4.55 Smokescreen                   Clarke     Arthur C.
+MYS          6 Vibrancy                      Clarke     Arthur C.
+MYS      23.57 The DaVinci Code              Clarke     Arthur C.
+MYS       4.75 Knockdown                     Clarke     Arthur C.
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.35 Death on the Nile             Clarke     Arthur C.
+MYS       3.95 Risk                          Clarke     Arthur C.
+MYS       4.75 Knockdown                     Cussler    Clive    
+MYS       4.75 Knockdown                     Cussler    Clive    
+MYS       4.35 Death on the Nile             Cussler    Clive    
+MYS       4.35 Death on the Nile             Cussler    Clive    
+MYS       4.35 Death on the Nile             Cussler    Clive    
+MYS      23.95 Everywhere I Go               Cussler    Clive    
+MYS      23.95 Everywhere I Go               Cussler    Clive    
+MYS      23.95 Everywhere I Go               Cussler    Clive    
+MYS          6 Vibrancy                      Cussler    Clive    
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS          6 Vibrancy                      Cussler    Clive    
+MYS          6 Vibrancy                      Cussler    Clive    
+MYS      16.95 The Organist                  Cussler    Clive    
+MYS      16.95 The Organist                  Cussler    Clive    
+MYS      16.95 The Organist                  Cussler    Clive    
+MYS      23.57 The DaVinci Code              Cussler    Clive    
+MYS      23.57 The DaVinci Code              Cussler    Clive    
+MYS      23.57 The DaVinci Code              Cussler    Clive    
+MYS       8.75 Dragons at the Door           Cussler    Clive    
+MYS       8.75 Dragons at the Door           Cussler    Clive    
+MYS       4.75 Knockdown                     Cussler    Clive    
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.55 Smokescreen                   Cussler    Clive    
+MYS       4.55 Smokescreen                   Cussler    Clive    
+MYS       4.55 Smokescreen                   Cussler    Clive    
+MYS       3.95 Risk                          Cussler    Clive    
+MYS       3.95 Risk                          Cussler    Clive    
+MYS       3.95 Risk                          Cussler    Clive    
+MYS       4.45 Evil Under the Sun            Cussler    Clive    
+MYS       4.45 Evil Under the Sun            Cussler    Clive    
+MYS       8.75 Dragons at the Door           Cussler    Clive    
+MYS       4.45 Evil Under the Sun            Cussler    Clive    
+MYS       4.55 Smokescreen                   Francis    Dick     
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       3.95 Risk                          Francis    Dick     
+MYS       4.55 Smokescreen                   Francis    Dick     
+MYS       4.75 Knockdown                     Francis    Dick     
+MYS       4.75 Knockdown                     Francis    Dick     
+MYS       4.75 Knockdown                     Francis    Dick     
+MYS       4.35 Death on the Nile             Francis    Dick     
+MYS       4.35 Death on the Nile             Francis    Dick     
+MYS       4.35 Death on the Nile             Francis    Dick     
+MYS      23.95 Everywhere I Go               Francis    Dick     
+MYS      23.95 Everywhere I Go               Francis    Dick     
+MYS      23.95 Everywhere I Go               Francis    Dick     
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS          6 Vibrancy                      Francis    Dick     
+MYS          6 Vibrancy                      Francis    Dick     
+MYS          6 Vibrancy                      Francis    Dick     
+MYS      16.95 The Organist                  Francis    Dick     
+MYS      16.95 The Organist                  Francis    Dick     
+MYS      16.95 The Organist                  Francis    Dick     
+MYS      23.57 The DaVinci Code              Francis    Dick     
+MYS      23.57 The DaVinci Code              Francis    Dick     
+MYS      23.57 The DaVinci Code              Francis    Dick     
+MYS       8.75 Dragons at the Door           Francis    Dick     
+MYS       8.75 Dragons at the Door           Francis    Dick     
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       8.75 Dragons at the Door           Francis    Dick     
+MYS       4.45 Evil Under the Sun            Francis    Dick     
+MYS       4.45 Evil Under the Sun            Francis    Dick     
+MYS       4.45 Evil Under the Sun            Francis    Dick     
+MYS       3.95 Risk                          Francis    Dick     
+MYS       3.95 Risk                          Francis    Dick     
+MYS       4.55 Smokescreen                   Francis    Dick     
+MYS       4.55 Smokescreen                   Ginferrer  Pere     
+MYS       4.75 Knockdown                     Ginferrer  Pere     
+MYS       4.35 Death on the Nile             Ginferrer  Pere     
+MYS      23.95 Everywhere I Go               Ginferrer  Pere     
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       3.95 Risk                          Ginferrer  Pere     
+MYS      16.95 The Organist                  Ginferrer  Pere     
+MYS      23.57 The DaVinci Code              Ginferrer  Pere     
+MYS       8.75 Dragons at the Door           Ginferrer  Pere     
+MYS       4.45 Evil Under the Sun            Ginferrer  Pere     
+MYS          6 Vibrancy                      Ginferrer  Pere     
+MYS       4.55 Smokescreen                   Harmon     Willis   
+MYS       4.75 Knockdown                     Harmon     Willis   
+MYS       4.35 Death on the Nile             Harmon     Willis   
+MYS      23.95 Everywhere I Go               Harmon     Willis   
+MYS       3.95 Risk                          Harmon     Willis   
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS      16.95 The Organist                  Harmon     Willis   
+MYS      23.57 The DaVinci Code              Harmon     Willis   
+MYS       8.75 Dragons at the Door           Harmon     Willis   
+MYS       4.45 Evil Under the Sun            Harmon     Willis   
+MYS          6 Vibrancy                      Harmon     Willis   
+MYS       4.55 Smokescreen                   Kafka      Franz    
+MYS       4.55 Smokescreen                   Kafka      Franz    
+MYS       4.75 Knockdown                     Kafka      Franz    
+MYS       4.75 Knockdown                     Kafka      Franz    
+MYS       4.35 Death on the Nile             Kafka      Franz    
+MYS       4.35 Death on the Nile             Kafka      Franz    
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS      23.95 Everywhere I Go               Kafka      Franz    
+MYS      23.95 Everywhere I Go               Kafka      Franz    
+MYS          6 Vibrancy                      Kafka      Franz    
+MYS          6 Vibrancy                      Kafka      Franz    
+MYS      16.95 The Organist                  Kafka      Franz    
+MYS      16.95 The Organist                  Kafka      Franz    
+MYS      23.57 The DaVinci Code              Kafka      Franz    
+MYS      23.57 The DaVinci Code              Kafka      Franz    
+MYS       8.75 Dragons at the Door           Kafka      Franz    
+MYS       8.75 Dragons at the Door           Kafka      Franz    
+MYS       4.45 Evil Under the Sun            Kafka      Franz    
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.45 Evil Under the Sun            Kafka      Franz    
+MYS       3.95 Risk                          Kafka      Franz    
+MYS       3.95 Risk                          Kafka      Franz    
+MYS       4.55 Smokescreen                   King       Stephen  
+MYS       3.95 Risk                          King       Stephen  
+MYS       4.75 Knockdown                     King       Stephen  
+MYS       4.75 Knockdown                     King       Stephen  
+MYS       4.35 Death on the Nile             King       Stephen  
+MYS       4.35 Death on the Nile             King       Stephen  
+MYS      23.95 Everywhere I Go               King       Stephen  
+MYS      23.95 Everywhere I Go               King       Stephen  
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS          6 Vibrancy                      King       Stephen  
+MYS          6 Vibrancy                      King       Stephen  
+MYS      16.95 The Organist                  King       Stephen  
+MYS      16.95 The Organist                  King       Stephen  
+MYS      23.57 The DaVinci Code              King       Stephen  
+MYS      23.57 The DaVinci Code              King       Stephen  
+MYS       8.75 Dragons at the Door           King       Stephen  
+MYS       8.75 Dragons at the Door           King       Stephen  
+MYS       4.45 Evil Under the Sun            King       Stephen  
+MYS       4.45 Evil Under the Sun            King       Stephen  
+MYS       3.95 Risk                          King       Stephen  
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.55 Smokescreen                   King       Stephen  
+MYS       4.55 Smokescreen                   Lovecraft  H.P.     
+MYS       4.75 Knockdown                     Lovecraft  H.P.     
+MYS       4.35 Death on the Nile             Lovecraft  H.P.     
+MYS      23.95 Everywhere I Go               Lovecraft  H.P.     
+MYS       3.95 Risk                          Lovecraft  H.P.     
+MYS      16.95 The Organist                  Lovecraft  H.P.     
+MYS      23.57 The DaVinci Code              Lovecraft  H.P.     
+MYS       8.75 Dragons at the Door           Lovecraft  H.P.     
+MYS       4.45 Evil Under the Sun            Lovecraft  H.P.     
+MYS          6 Vibrancy                      Lovecraft  H.P.     
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.55 Smokescreen                   Novalis             
+MYS       4.75 Knockdown                     Novalis             
+MYS       4.35 Death on the Nile             Novalis             
+MYS      23.95 Everywhere I Go               Novalis             
+MYS       3.95 Risk                          Novalis             
+MYS      16.95 The Organist                  Novalis             
+MYS      23.57 The DaVinci Code              Novalis             
+MYS       8.75 Dragons at the Door           Novalis             
+MYS       4.45 Evil Under the Sun            Novalis             
+MYS          6 Vibrancy                      Novalis             
+MYS       4.55 Smokescreen                   Owen       Barbara  
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       3.95 Risk                          Owen       Barbara  
+MYS       4.75 Knockdown                     Owen       Barbara  
+MYS       4.75 Knockdown                     Owen       Barbara  
+MYS       4.35 Death on the Nile             Owen       Barbara  
+MYS       4.35 Death on the Nile             Owen       Barbara  
+MYS      23.95 Everywhere I Go               Owen       Barbara  
+MYS      23.95 Everywhere I Go               Owen       Barbara  
+MYS          6 Vibrancy                      Owen       Barbara  
+MYS          6 Vibrancy                      Owen       Barbara  
+MYS      16.95 The Organist                  Owen       Barbara  
+MYS      16.95 The Organist                  Owen       Barbara  
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS      23.57 The DaVinci Code              Owen       Barbara  
+MYS      23.57 The DaVinci Code              Owen       Barbara  
+MYS       8.75 Dragons at the Door           Owen       Barbara  
+MYS       8.75 Dragons at the Door           Owen       Barbara  
+MYS       4.45 Evil Under the Sun            Owen       Barbara  
+MYS       4.45 Evil Under the Sun            Owen       Barbara  
+MYS       3.95 Risk                          Owen       Barbara  
+MYS       4.55 Smokescreen                   Owen       Barbara  
+MYS       4.75 Knockdown                     Paz        Octavio  
+MYS      23.57 The DaVinci Code              Paz        Octavio  
+MYS          6 Vibrancy                      Paz        Octavio  
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.45 Evil Under the Sun            Paz        Octavio  
+MYS      23.95 Everywhere I Go               Paz        Octavio  
+MYS       4.55 Smokescreen                   Paz        Octavio  
+MYS      16.95 The Organist                  Paz        Octavio  
+MYS       8.75 Dragons at the Door           Paz        Octavio  
+MYS       4.35 Death on the Nile             Paz        Octavio  
+MYS       3.95 Risk                          Paz        Octavio  
+MYS      23.95 Everywhere I Go               Pratt      Philip   
+MYS          6 Vibrancy                      Pratt      Philip   
+MYS          6 Vibrancy                      Pratt      Philip   
+MYS          6 Vibrancy                      Pratt      Philip   
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS      16.95 The Organist                  Pratt      Philip   
+MYS      16.95 The Organist                  Pratt      Philip   
+MYS      16.95 The Organist                  Pratt      Philip   
+MYS      23.57 The DaVinci Code              Pratt      Philip   
+MYS      23.57 The DaVinci Code              Pratt      Philip   
+MYS      23.57 The DaVinci Code              Pratt      Philip   
+MYS       8.75 Dragons at the Door           Pratt      Philip   
+MYS       8.75 Dragons at the Door           Pratt      Philip   
+MYS       8.75 Dragons at the Door           Pratt      Philip   
+MYS       4.45 Evil Under the Sun            Pratt      Philip   
+MYS       4.45 Evil Under the Sun            Pratt      Philip   
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.45 Evil Under the Sun            Pratt      Philip   
+MYS       3.95 Risk                          Pratt      Philip   
+MYS       3.95 Risk                          Pratt      Philip   
+MYS       3.95 Risk                          Pratt      Philip   
+MYS      23.95 Everywhere I Go               Pratt      Philip   
+MYS      23.95 Everywhere I Go               Pratt      Philip   
+MYS       4.35 Death on the Nile             Pratt      Philip   
+MYS       4.35 Death on the Nile             Pratt      Philip   
+MYS       4.35 Death on the Nile             Pratt      Philip   
+MYS       4.75 Knockdown                     Pratt      Philip   
+MYS       4.75 Knockdown                     Pratt      Philip   
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.75 Knockdown                     Pratt      Philip   
+MYS       4.55 Smokescreen                   Pratt      Philip   
+MYS       4.55 Smokescreen                   Pratt      Philip   
+MYS       4.55 Smokescreen                   Pratt      Philip   
+MYS       4.55 Smokescreen                   Reingold   Howard   
+MYS       4.75 Knockdown                     Reingold   Howard   
+MYS       4.35 Death on the Nile             Reingold   Howard   
+MYS      23.95 Everywhere I Go               Reingold   Howard   
+MYS       3.95 Risk                          Reingold   Howard   
+MYS      16.95 The Organist                  Reingold   Howard   
+MYS      23.57 The DaVinci Code              Reingold   Howard   
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       8.75 Dragons at the Door           Reingold   Howard   
+MYS       4.45 Evil Under the Sun            Reingold   Howard   
+MYS          6 Vibrancy                      Reingold   Howard   
+MYS       4.55 Smokescreen                   Southworth Rod      
+MYS       3.95 Risk                          Southworth Rod      
+MYS       4.75 Knockdown                     Southworth Rod      
+MYS       4.75 Knockdown                     Southworth Rod      
+MYS       4.35 Death on the Nile             Southworth Rod      
+MYS       4.35 Death on the Nile             Southworth Rod      
+MYS      23.95 Everywhere I Go               Southworth Rod      
+MYS      23.95 Everywhere I Go               Southworth Rod      
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS          6 Vibrancy                      Southworth Rod      
+MYS          6 Vibrancy                      Southworth Rod      
+MYS      16.95 The Organist                  Southworth Rod      
+MYS      16.95 The Organist                  Southworth Rod      
+MYS      23.57 The DaVinci Code              Southworth Rod      
+MYS      23.57 The DaVinci Code              Southworth Rod      
+MYS       8.75 Dragons at the Door           Southworth Rod      
+MYS       8.75 Dragons at the Door           Southworth Rod      
+MYS       4.45 Evil Under the Sun            Southworth Rod      
+MYS       4.45 Evil Under the Sun            Southworth Rod      
+MYS       3.95 Risk                          Southworth Rod      
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.55 Smokescreen                   Southworth Rod      
+MYS       4.55 Smokescreen                   Williams   Peter    
+MYS       4.55 Smokescreen                   Williams   Peter    
+MYS       3.95 Risk                          Williams   Peter    
+MYS       3.95 Risk                          Williams   Peter    
+MYS       4.45 Evil Under the Sun            Williams   Peter    
+MYS       4.45 Evil Under the Sun            Williams   Peter    
+MYS       8.75 Dragons at the Door           Williams   Peter    
+MYS       8.75 Dragons at the Door           Williams   Peter    
+MYS      23.57 The DaVinci Code              Williams   Peter    
+MYS      23.57 The DaVinci Code              Williams   Peter    
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS      16.95 The Organist                  Williams   Peter    
+MYS       4.75 Knockdown                     Williams   Peter    
+MYS       4.75 Knockdown                     Williams   Peter    
+MYS       4.35 Death on the Nile             Williams   Peter    
+MYS       4.35 Death on the Nile             Williams   Peter    
+MYS      23.95 Everywhere I Go               Williams   Peter    
+MYS      23.95 Everywhere I Go               Williams   Peter    
+MYS          6 Vibrancy                      Williams   Peter    
+MYS          6 Vibrancy                      Williams   Peter    
+MYS      16.95 The Organist                  Williams   Peter    
+MYS      23.57 The DaVinci Code              Wray       Robert   
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.45 Evil Under the Sun            Wray       Robert   
+MYS       4.35 Death on the Nile             Wray       Robert   
+MYS          6 Vibrancy                      Wray       Robert   
+MYS       3.95 Risk                          Wray       Robert   
+MYS       4.75 Knockdown                     Wray       Robert   
+MYS      16.95 The Organist                  Wray       Robert   
+MYS      23.95 Everywhere I Go               Wray       Robert   
+MYS       4.55 Smokescreen                   Wray       Robert   
+MYS       8.75 Dragons at the Door           Wray       Robert   
+MYS       4.55 Smokescreen                   Zinbardo   Philip   
+MYS       4.75 Knockdown                     Zinbardo   Philip   
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS       4.35 Death on the Nile             Zinbardo   Philip   
+MYS      23.95 Everywhere I Go               Zinbardo   Philip   
+MYS       3.95 Risk                          Zinbardo   Philip   
+MYS      16.95 The Organist                  Zinbardo   Philip   
+MYS      23.57 The DaVinci Code              Zinbardo   Philip   
+MYS       8.75 Dragons at the Door           Zinbardo   Philip   
+MYS       4.45 Evil Under the Sun            Zinbardo   Philip   
+MYS          6 Vibrancy                      Zinbardo   Philip   
+
+360 rows selected. 
+
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+CS       54.95 Database Systems              Adamski    Joseph   
+FIC       5.55 Kane and Abel                 Archer     Jeffrey  
+FIC       3.95 First Among Equals            Archer     Jeffrey  
+FIC       5.45 The Prodigal Daughter         Archer     Jeffrey  
+FIC       9.63 The Stranger                  Camus      Albert   
+ART      13.25 Prints of the 20th Century    Castleman  Riva     
+MYS       4.35 Death on the Nile             Christie   Agatha   
+MYS       4.45 Evil Under the Sun            Christie   Agatha   
+SFI      21.95 Ghost from the Grand Banks    Clarke     Arthur C.
+MYS          6 Vibrancy                      Cussler    Clive    
+SUS      43.89 Night Probe                   Cussler    Clive    
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+SUS       6.11 Vixen 07                      Cussler    Clive    
+MYS       4.55 Smokescreen                   Francis    Dick     
+MYS       3.95 Risk                          Francis    Dick     
+MYS       4.75 Knockdown                     Francis    Dick     
+ART      21.95 Magritte                      Ginferrer  Pere     
+PSY       9.75 Higher Creativity             Harmon     Willis   
+FIC      12.05 Amerika                       Kafka      Franz    
+FIC      13.37 The Castle                    Kafka      Franz    
+HOR       6.75 Carrie                        King       Stephen  
+HOR       6.65 Kujo                          King       Stephen  
+HOR      19.75 The Dunwich Horror and Others Lovecraft  H.P.     
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+POE       7.43 Hymns to the Night            Novalis             
+MYS      16.95 The Organist                  Owen       Barbara  
+MYS       8.75 Dragons at the Door           Owen       Barbara  
+ART      11.25 Marcel Duchamp                Paz        Octavio  
+CS        39.9 dBASE Programming             Pratt      Philip   
+CS       54.95 Database Systems              Pratt      Philip   
+CS       23.95 A Guide to SQL                Pratt      Philip   
+PSY       9.75 Higher Creativity             Reingold   Howard   
+MYS      23.95 Everywhere I Go               Southworth Rod      
+CS        20.5 DOS Essentials                Southworth Rod      
+MYS       8.75 Dragons at the Door           Williams   Peter    
+
+CAT      PRICE TITLE                         LAST_NAME  FIRST_NAM
+--- ---------- ----------------------------- ---------- ---------
+MYS      16.95 The Organist                  Williams   Peter    
+CS        39.9 dBASE Programming             Wray       Robert   
+PSY       8.42 Shyness                       Zinbardo   Philip   
+
+36 rows selected. 
+
+
+CAT COUNT(DISTINCTBOOKS.TITLE)
+--- --------------------------
+MYS                         10
+FIC                          6
+SUS                          2
+CS                           4
+POE                          1
+SFI                          2
+ART                          3
+HOR                          3
+PSY                          2
+
+9 rows selected. 
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+CUST_ID    SALE_DATE  TITLE                         SS_NBR_PURCHASED LINE_TOTAL
+---------- ---------- ----------------------------- ---------------- ----------
+10001      12/01/2017 Shyness                                      1       8.42
+10002      12/01/2017 The Stranger                                 2      19.26
+10003      12/01/2017 Hymns to the Night                           3      22.29
+
+
+View NUMBER12 created.
+
+
+CUST_ID    SALE_DATE  TITLE                         SS_NBR_PURCHASED LINE_TOTAL
+---------- ---------- ----------------------------- ---------------- ----------
+10003      12/01/2017 Hymns to the Night                           3      22.29
+
+
+AVG(NUMBER12.LINE_TOTAL)
+------------------------
+              16.6566667
+
+
+MIN(NUMBER12.LINE_TOTAL)
+------------------------
+                    8.42
+
+
+MAX(NUMBER12.LINE_TOTAL)
+------------------------
+                   22.29
+
+
+View NUMBER14 created.
+
+
+Error starting at line : 205 in command -
+SELECT SUM(BOOKS.PRICE)
+  FROM BOOK
+Error at Command Line : 206 Column : 8
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+NAME      COUNT(NUMBER14.ON_HAND) AVG(ON_HAND)
+--------- ----------------------- ------------
+Hilldale                       15   2.13333333
+Eastshore                       6   1.83333333
+Downtown                       10          1.9
+Brentwood                       9            2
+
+
+NAME      AVG(ON_HAND)
+--------- ------------
+Brentwood            3
+Downtown             3
+Eastshore            3
+Hilldale           3.4
+
